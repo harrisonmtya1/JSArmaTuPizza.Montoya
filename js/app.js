@@ -15,15 +15,15 @@ alert("El costo de su pedido es " + precioFinal + " e incluye el domicilio");
 
 function ingresarDatosCliente(){
     nombreCliente=prompt("Por favor ingrese su nombre");
-    telefonoCliente=prompt("Telefono de contacto");
+    telefonoCliente=parseInt(prompt("Telefono de contacto"));
     direccionCliente=prompt("Direccion de domicilio");
     alert("Los Datos ingresados son:" +"\nNombre: "+nombreCliente+"\nTelefono: "+telefonoCliente+"\nDireccion: "+direccionCliente);
 }
 
 function armarPizza(){
-   tamañoPizza=prompt("Ingrese el tamaño de su pizza\n"+"Escoja entre las siguientes opciones: familiar, mediana, personal");
-   numeroIngredientes=prompt("Ingrese la cantidad de ingredientes que desea: 1, 2, 3, 4 o 5");
-    
+   tamañoPizza=prompt("Ingrese el tamaño de su pizza\n"+"Escoja entre las siguientes opciones: familiar, mediana, personal").toLocaleLowerCase();
+   numeroIngredientes= parseInt(prompt("Ingrese la cantidad de ingredientes que desea: 1, 2, 3, 4 o 5"));
+   debugger 
 }
 
 function calcuparPrecio(tamañoPizza,numeroIngredientes){
