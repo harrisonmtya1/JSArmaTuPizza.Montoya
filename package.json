@@ -1,0 +1,23 @@
+{
+  "name": "jsarmatupizza.montoya",
+  "version": "1.0.0",
+  "description": "Proyecto JS Coder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harrisonmtya1/JSArmaTuPizza.Montoya.git"
+  },
+  "author": "Harrison Montoya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harrisonmtya1/JSArmaTuPizza.Montoya/issues"
+  },
+  "homepage": "https://github.com/harrisonmtya1/JSArmaTuPizza.Montoya#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
