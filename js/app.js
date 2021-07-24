@@ -25,11 +25,11 @@ class pizza{
     }
 
     armarPizza(){
-        this.tamaño=prompt("Ingrese el tamaño de su pizza\n"+"Escoja entre las siguientes opciones: familiar, mediana, personal");
+        this.tamaño=prompt("Ingrese el tamaño de su pizza\n"+"Escoja entre las siguientes opciones: Familiar, Mediana, Personal");
         this.numeroIngredientes=prompt("Ingrese la cantidad de ingredientes que desea: 1, 2, 3, 4 o 5");
     }
 
-    calcuparPrecio(tamañoPizza,numeroIngredientes){
+    calcularPrecio(tamañoPizza,numeroIngredientes){
         switch(tamañoPizza){
             case "familiar":
                 return numeroIngredientes * 3000 + 20000;
@@ -51,6 +51,9 @@ let direccionCliente="";
 let numeroIngredientes=1;
 let tamañoPizza="";
 let precioFinal=0;
+let pizzasPedidas=[];
+let clientes=[];
+let comprarMas="";
 
 let objPizza=new pizza(tamañoPizza,numeroIngredientes);
 let objCliente=new cliente(nombreCliente,telefonoCliente,direccionCliente);
@@ -59,8 +62,34 @@ alert("Bienvenido a la Pizzeria!!" +"\nA continuacion ingresa tus Datos para inc
 
 objCliente.solicitarDatos();
 objPizza.armarPizza();
-precioFinal=objPizza.calcuparPrecio(objPizza.tamaño,objPizza.numeroIngredientes);
+precioFinal=objPizza.calcularPrecio(objPizza.tamaño,objPizza.numeroIngredientes);
 alert("El costo de su pedido es " + precioFinal + " e incluye el domicilio");
+
+pizzasPedidas.push(objPizza);
+
+comprarMas=prompt("Desea adiconar otra pizza a su compra ?\n" + "Ingres si o no:");
+
+while(comprarMas=="si"){
+    pizzasPedidas.push(new pizza(tamañoPizza,numeroIngredientes));
+    let objPizza=pizzasPedidas[pizzasPedidas.length -1];
+    objPizza.armarPizza();
+    debugger
+    alert("El costo de esta pizza es de: " + objPizza.calcularPrecio(objPizza.tamaño,objPizza.numeroIngredientes) + " y se adiconara a su pedido");
+    comprarMas=prompt("Desea adiconar otra pizza a su compra ?\n" + "Ingres si o no:");
+}
+precioFinal=calcularPrecio(pizzasPedidas);
+
+alert("El costo de su pedido es " + precioFinal + " e incluye el domicilio");
+
+
+function calcularPrecio(pizzasPedidas) {
+    precioFinal=0;
+    for(const pizza of pizzasPedidas){
+        precioFinal+=pizza.calcularPrecio(pizza.tamaño,pizza.numeroIngredientes);
+    }
+    
+    return precioFinal;
+}
 
 
 
