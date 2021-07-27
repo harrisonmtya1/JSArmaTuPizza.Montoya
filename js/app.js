@@ -92,7 +92,18 @@ function calcularPrecio(pizzasPedidas) {
 }
 
 
+function comprobar(a,b) {
+    if (a.numeroIngredientes > b.numeroIngredientes) {
+        return 1;
+      }
+      if (a.numeroIngredientes < b.numeroIngredientes) {
+        return -1;
+      }
+      // a must be equal to b
+      return 0;    
+}
 
+pizzasPedidas.sort(comprobar);
 
 
 
