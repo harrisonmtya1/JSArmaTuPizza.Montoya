@@ -40,7 +40,7 @@
             </div>
             <div class="carta__ordenar">
                 <form id="ordenarCarta">
-                    <select class="form-select form-select-sm mb-3" id="seleccionPizza">
+                    <select class="form-select form-select-sm mb-3 seleccionPizza" >
 
                     </select>
                     <select class="form-select form-select-sm mb-3">
@@ -49,7 +49,7 @@
                         <option>Familiar</option>
                     </select>
                     <input type="number" class="form-control mb-3" placeholder="Cantidad">
-                    <button href="#listaPedidos" id="btnOrdenarCarta" type="submit" class="btn btn-primary">Ordenar</button>
+                    <button id="btnOrdenarCarta" type="submit" class="btn btn-primary">Ordenar</button>
                 </form>
 
             </div>
@@ -58,14 +58,109 @@
         <section class="armaTuPizza">
             <h2 class="border-top border-danger mt-2 border-4">¡¡ Arma la pizza a tu gusto !!</h2>
             <div class="armarPizza">
+                <div>
+                  <input type="button" class="m-2 btn btn-warning" value="Piña">
+                  <input type="button" class="m-2 btn btn-success" value="Jamon">
+                  <input type="button" class="m-2 btn btn-info" value="Tocineta">
+                  <input type="button" class="m-2 btn btn-primary" value="Jalapeños">
+                  <input type="button" class="m-2 btn btn-warning" value="Salami">
+                  <input type="button" class="m-2 btn btn-info" value="Peperoni">
+                  <input type="button" class="m-2 btn btn-danger" value="Maiz">
+                  <input type="button" class="m-2 btn btn-success" value="Pollo">
+                  <input type="button" class="m-2 btn btn-warning" value="Tomate">
+                  <input type="button" class="m-2 btn btn-danger" value="Procciuto">
+                </div>
+                <div>
+                    <form>
+                        <select class="form-select form-select-sm m-3 seleccionPizza">
+                            
+                        </select>
+                        <input class="form-control form-select-sm m-3" type="number" placeholder="Cantidad">
+                    </form>
+                </div>
+                <div>
+                
 
+                </div>
             </div>
-            <div class="preciosIngredientes">
-
+            <div class="preciosIngredientes border border-danger rounded">
+                <h5 class="bg-warning p-2 m-3 rounded">Precio ingrediente o adicion por tamaño de pizza</h5>
+                <table class="table" >
+                    <thead>
+                        <tr>
+                            <th>Ingrediente</th>
+                            <th>Personal</th>
+                            <th>Mediana</th>
+                            <th>Familiar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Piña</td>
+                            <td>800</td>
+                            <td>1300</td>
+                            <td>1800</td>
+                        </tr>
+                        <tr>
+                            <td>Jamon</td>
+                            <td>1100</td>
+                            <td>1300</td>
+                            <td>1500</td>
+                        </tr>
+                        <tr>
+                            <td>Tocineta</td>
+                            <td>1000</td>
+                            <td>1500</td>
+                            <td>2000</td>
+                        </tr>
+                        <tr>
+                            <td>Jalapeños</td>
+                            <td>700</td>
+                            <td>900</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>Salami</td>
+                            <td>900</td>
+                            <td>1050</td>
+                            <td>1200</td>
+                        </tr>
+                        <tr>
+                            <td>Peperoni</td>
+                            <td>900</td>
+                            <td>1050</td>
+                            <td>1200</td>
+                        </tr>
+                        <tr>
+                            <td>Maiz</td>
+                            <td>500</td>
+                            <td>900</td>
+                            <td>1100</td>
+                        </tr>
+                        <tr>
+                            <td>Pollo</td>
+                            <td>850</td>
+                            <td>1150</td>
+                            <td>1300</td>
+                        </tr>
+                        <tr>
+                            <td>Tomate</td>
+                            <td>800</td>
+                            <td>1300</td>
+                            <td>1800</td>
+                        </tr>
+                        <tr>
+                            <td>Pocciuto</td>
+                            <td>1500</td>
+                            <td>1800</td>
+                            <td>2000</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
         </section>
-        <section id="listaPedidos" class="container" name="listaPedidos">
+        <section id="listaPedidos" class="container">
             <h2 class="border-top border-danger border-4 mt-2">¡¡ Confirma Tus pedidos !!</h2>
             <div class="row">
                 <div class="col-md-2"><h4>Pizza</h4></div>
