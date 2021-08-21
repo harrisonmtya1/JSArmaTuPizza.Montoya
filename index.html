@@ -40,7 +40,7 @@
             </div>
             <div class="carta__ordenar">
                 <form id="ordenarCarta">
-                    <select class="form-select form-select-sm mb-3 seleccionPizza" >
+                    <select class="form-select form-select-sm mb-3 seleccionPizza">
 
                     </select>
                     <select class="form-select form-select-sm mb-3">
@@ -58,34 +58,60 @@
         <section class="armaTuPizza">
             <h2 class="border-top border-danger mt-2 border-4">¡¡ Arma la pizza a tu gusto !!</h2>
             <div class="armarPizza">
-                <div>
-                  <input type="button" class="m-2 btn btn-warning" value="Piña">
-                  <input type="button" class="m-2 btn btn-success" value="Jamon">
-                  <input type="button" class="m-2 btn btn-info" value="Tocineta">
-                  <input type="button" class="m-2 btn btn-primary" value="Jalapeños">
-                  <input type="button" class="m-2 btn btn-warning" value="Salami">
-                  <input type="button" class="m-2 btn btn-info" value="Peperoni">
-                  <input type="button" class="m-2 btn btn-danger" value="Maiz">
-                  <input type="button" class="m-2 btn btn-success" value="Pollo">
-                  <input type="button" class="m-2 btn btn-warning" value="Tomate">
-                  <input type="button" class="m-2 btn btn-danger" value="Procciuto">
-                </div>
+
                 <div>
                     <form>
-                        <select class="form-select form-select-sm m-3 seleccionPizza">
-                            
+                        <label class="m-3 mb-0">Tamaño</label>
+                        <select id="armarPizza_tamaño" class="form-select form-select-sm m-3 mt-0 seleccionPizza" placeholder="Tamaño">
+                            <option selected>Personal</option>
+                            <option>Mediana</option>
+                            <option>Familiar</option>
                         </select>
-                        <input class="form-control form-select-sm m-3" type="number" placeholder="Cantidad">
+                        <label class="m-3 mb-0 mt-0">Cantidad</label>
+                        <input id="armarPizza_cantidad" class="form-control form-select-sm m-3 mt-1" type="number" placeholder="0">
                     </form>
                 </div>
                 <div>
+                    <input type="button" class="botonIngrediente m-2 btn btn-warning" value="Piña">
+                    <input type="button" class="botonIngrediente m-2 btn btn-success" value="Jamon">
+                    <input type="button" class="botonIngrediente m-2 btn btn-info" value="Tocineta">
+                    <input type="button" class="botonIngrediente m-2 btn btn-primary" value="Jalapeños">
+                    <input type="button" class="botonIngrediente m-2 btn btn-warning" value="Salami">
+                    <input type="button" class="botonIngrediente m-2 btn btn-info" value="Peperoni">
+                    <input type="button" class="botonIngrediente m-2 btn btn-danger" value="Maiz">
+                    <input type="button" class="botonIngrediente m-2 btn btn-success" value="Pollo">
+                    <input type="button" class="botonIngrediente m-2 btn btn-warning" value="Tomate">
+                    <input type="button" class="botonIngrediente m-2 btn btn-danger" value="Procciuto">
+                </div>
                 
+                <div>
+                    <table class="table m-3">
+                        <thead>
+                            <tr>
+                                <th>Ingredientes</th>
+                                <th>Tamaño</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id=tdIngredientes></td>
+                                <td id=tdTamaño></td>
+                                <td id=tdCantidad></td>
+                                <td id=tdPrecio></td>
+                            </tr>
+                        </tbody>
+                    </table>
 
                 </div>
+                <button id="btnOrderArmada" class="btn btn-primary m-3">Ordenar</button>
+                <button id="btnArmarDeNuevo" class="btn btn-primary m-3">Armar de nuevo</button>
             </div>
             <div class="preciosIngredientes border border-danger rounded">
-                <h5 class="bg-warning p-2 m-3 rounded">Precio ingrediente o adicion por tamaño de pizza</h5>
-                <table class="table" >
+                <h5 class="bg-warning p-2 m-3 rounded">Precio ingrediente por tamaño de pizza</h5>
+                <h5 class="bg-warning p-2 m-3 rounded">Precios Base -- Personal:7000 / Mediana:8000 / Familiar:10000</h5>
+                <table class="table">
                     <thead>
                         <tr>
                             <th>Ingrediente</th>
@@ -163,11 +189,21 @@
         <section id="listaPedidos" class="container">
             <h2 class="border-top border-danger border-4 mt-2">¡¡ Confirma Tus pedidos !!</h2>
             <div class="row">
-                <div class="col-md-2"><h4>Pizza</h4></div>
-                <div class="col-md-4"><h4>Descripcion</h4></div>
-                <div class="col-md-2"><h4>Tamaño</h4></div>
-                <div class="col-md-2"><h4>Cantidad</h4></div>
-                <div class="col-md-2"><h4>Precio</h4></div>
+                <div class="col-md-2">
+                    <h4>Pizza</h4>
+                </div>
+                <div class="col-md-4">
+                    <h4>Descripcion</h4>
+                </div>
+                <div class="col-md-2">
+                    <h4>Tamaño</h4>
+                </div>
+                <div class="col-md-2">
+                    <h4>Cantidad</h4>
+                </div>
+                <div class="col-md-2">
+                    <h4>Precio</h4>
+                </div>
             </div>
 
 
@@ -181,6 +217,7 @@
     </footer>
 
     <!-- <script src="js/app.js"></script> -->
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/DOM.js"></script>
 
 </body>
