@@ -195,6 +195,139 @@ $(".botonIngrediente").click((e) => {
                     break;
             }
             break;
+        case "Jalapeños":
+            switch ($("#armarPizza_tamaño").val()) {
+                case "Personal":
+                    precioPizzaArmada += ((700) * ($("#armarPizza_cantidad").val()));
+                    $("#tdPrecio").text(precioPizzaArmada);
+                    $("#tdIngredientes").text($("#tdIngredientes").text() + "Jalapeños ");
+                    break;
+                case "Mediana":
+                    precioPizzaArmada += ((900) * ($("#armarPizza_cantidad").val()));
+                    $("#tdPrecio").text(precioPizzaArmada);
+                    $("#tdIngredientes").text($("#tdIngredientes").text() + "Jalapeños ");
+                    break;
+                case "Familiar":
+                    precioPizzaArmada += ((1000) * ($("#armarPizza_cantidad").val()));
+                    $("#tdPrecio").text(precioPizzaArmada);
+                    $("#tdIngredientes").text($("#tdIngredientes").text() + "Jalapeños ");
+                    break;
+            }
+            break;
+        case "Salami":
+            switch ($("#armarPizza_tamaño").val()) {
+                case "Personal":
+                    precioPizzaArmada += ((900) * ($("#armarPizza_cantidad").val()));
+                    $("#tdPrecio").text(precioPizzaArmada);
+                    $("#tdIngredientes").text($("#tdIngredientes").text() + "Salami ");
+                    break;
+                case "Mediana":
+                    precioPizzaArmada += ((1050) * ($("#armarPizza_cantidad").val()));
+                    $("#tdPrecio").text(precioPizzaArmada);
+                    $("#tdIngredientes").text($("#tdIngredientes").text() + "Salami ");
+                    break;
+                case "Familiar":
+                    precioPizzaArmada += ((1200) * ($("#armarPizza_cantidad").val()));
+                    $("#tdPrecio").text(precioPizzaArmada);
+                    $("#tdIngredientes").text($("#tdIngredientes").text() + "Salami ");
+                    break;
+            }
+            break;
+        case "Peperoni":
+            switch ($("#armarPizza_tamaño").val()) {
+                case "Personal":
+                    precioPizzaArmada += ((900) * ($("#armarPizza_cantidad").val()));
+                    $("#tdPrecio").text(precioPizzaArmada);
+                    $("#tdIngredientes").text($("#tdIngredientes").text() + "Peperoni ");
+                    break;
+                case "Mediana":
+                    precioPizzaArmada += ((1050) * ($("#armarPizza_cantidad").val()));
+                    $("#tdPrecio").text(precioPizzaArmada);
+                    $("#tdIngredientes").text($("#tdIngredientes").text() + "Peperoni ");
+                    break;
+                case "Familiar":
+                    precioPizzaArmada += ((1200) * ($("#armarPizza_cantidad").val()));
+                    $("#tdPrecio").text(precioPizzaArmada);
+                    $("#tdIngredientes").text($("#tdIngredientes").text() + "Peperoni ");
+                    break;
+            }
+            break;
+        case "Maiz":
+            switch ($("#armarPizza_tamaño").val()) {
+                case "Personal":
+                    precioPizzaArmada += ((500) * ($("#armarPizza_cantidad").val()));
+                    $("#tdPrecio").text(precioPizzaArmada);
+                    $("#tdIngredientes").text($("#tdIngredientes").text() + "Maiz ");
+                    break;
+                case "Mediana":
+                    precioPizzaArmada += ((900) * ($("#armarPizza_cantidad").val()));
+                    $("#tdPrecio").text(precioPizzaArmada);
+                    $("#tdIngredientes").text($("#tdIngredientes").text() + "Maiz ");
+                    break;
+                case "Familiar":
+                    precioPizzaArmada += ((1100) * ($("#armarPizza_cantidad").val()));
+                    $("#tdPrecio").text(precioPizzaArmada);
+                    $("#tdIngredientes").text($("#tdIngredientes").text() + "Maiz ");
+                    break;
+            }
+            break;
+        case "Pollo":
+            switch ($("#armarPizza_tamaño").val()) {
+                case "Personal":
+                    precioPizzaArmada += ((850) * ($("#armarPizza_cantidad").val()));
+                    $("#tdPrecio").text(precioPizzaArmada);
+                    $("#tdIngredientes").text($("#tdIngredientes").text() + "Pollo ");
+                    break;
+                case "Mediana":
+                    precioPizzaArmada += ((1150) * ($("#armarPizza_cantidad").val()));
+                    $("#tdPrecio").text(precioPizzaArmada);
+                    $("#tdIngredientes").text($("#tdIngredientes").text() + "Pollo ");
+                    break;
+                case "Familiar":
+                    precioPizzaArmada += ((1300) * ($("#armarPizza_cantidad").val()));
+                    $("#tdPrecio").text(precioPizzaArmada);
+                    $("#tdIngredientes").text($("#tdIngredientes").text() + "Pollo ");
+                    break;
+            }
+            break;
+        case "Tomate":
+            switch ($("#armarPizza_tamaño").val()) {
+                case "Personal":
+                    precioPizzaArmada += ((800) * ($("#armarPizza_cantidad").val()));
+                    $("#tdPrecio").text(precioPizzaArmada);
+                    $("#tdIngredientes").text($("#tdIngredientes").text() + "Tomate ");
+                    break;
+                case "Mediana":
+                    precioPizzaArmada += ((1300) * ($("#armarPizza_cantidad").val()));
+                    $("#tdPrecio").text(precioPizzaArmada);
+                    $("#tdIngredientes").text($("#tdIngredientes").text() + "Tomate ");
+                    break;
+                case "Familiar":
+                    precioPizzaArmada += ((1800) * ($("#armarPizza_cantidad").val()));
+                    $("#tdPrecio").text(precioPizzaArmada);
+                    $("#tdIngredientes").text($("#tdIngredientes").text() + "Tomate ");
+                    break;
+            }
+            break;
+        case "Procciuto":
+            switch ($("#armarPizza_tamaño").val()) {
+                case "Personal":
+                    precioPizzaArmada += ((1500) * ($("#armarPizza_cantidad").val()));
+                    $("#tdPrecio").text(precioPizzaArmada);
+                    $("#tdIngredientes").text($("#tdIngredientes").text() + "Procciuto ");
+                    break;
+                case "Mediana":
+                    precioPizzaArmada += ((1800) * ($("#armarPizza_cantidad").val()));
+                    $("#tdPrecio").text(precioPizzaArmada);
+                    $("#tdIngredientes").text($("#tdIngredientes").text() + "Procciuto ");
+                    break;
+                case "Familiar":
+                    precioPizzaArmada += ((2000) * ($("#armarPizza_cantidad").val()));
+                    $("#tdPrecio").text(precioPizzaArmada);
+                    $("#tdIngredientes").text($("#tdIngredientes").text() + "Procciuto ");
+                    break;
+            }
+            break;
     }
 
 
@@ -202,28 +335,29 @@ $(".botonIngrediente").click((e) => {
 
 $("#armarPizza_tamaño").change((e) => {
     $("#tdTamaño").text(e.target.value);
-    switch (e.target.value) {
-        case "Personal":
-            precioPizzaArmada = 7000;
-            break;
-        case "Mediana":
-            precioPizzaArmada = 8000;
-            break;
-        case "Familiar":
-            precioPizzaArmada = 10000;
-            break;
-    }
     console.log(precioPizzaArmada);
 }).change();
 
 $("#armarPizza_cantidad").change((e) => {
     $("#tdCantidad").text(e.target.value);
-    precioPizzaArmada *= (e.target.value);
+    switch ($("#armarPizza_tamaño").val()) {
+        case "Personal":
+            precioPizzaArmada = 7000*(e.target.value);
+            break;
+        case "Mediana":
+            precioPizzaArmada = 8000*(e.target.value);
+            break;
+        case "Familiar":
+            precioPizzaArmada = 10000*(e.target.value);
+            break;
+    }
+    // precioPizzaArmada *= (e.target.value);
     console.log(precioPizzaArmada);
 })
 
 $("#btnArmarDeNuevo").click(() => {
     $("#armarPizza_tamaño").removeAttr("disabled");
+    $("#armarPizza_tamaño").val("Personal");
     $("#armarPizza_cantidad").removeAttr("disabled");
     $("#armarPizza_cantidad").val(1);
     $("#tdPrecio").text(0);
