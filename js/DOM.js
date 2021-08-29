@@ -49,30 +49,30 @@ class pizzasConfirmadas {
 let arrayPizzasConfirmadas = [];
 
 // array con objetos pizza
-// let carta = [{
-//     nombre: "Americana",
-//     descripcion: "Jamon ahumado, salami y doblequeso",
-//     precio: [8000, 10000, 12000]
-// },
-// {
-//     nombre: "Americana Especial",
-//     descripcion: "Salami, champiñón, cábano y doble queso",
-//     precio: [8600, 10600, 12600]
-// },
-// {
-//     nombre: "Hawaiana",
-//     descripcion: "Jamón ahumado, piña y doble queso",
-//     precio: [7000, 9000, 11000]
-// },
-// {
-//     nombre: "Italiana",
-//     descripcion: "Jamón ahumado, tomate fresco, cebolla, doble queso",
-//     precio: [10000, 12000, 14000]
-// }, {
-//     nombre: "Montañera",
-//     descripcion: "Cebolla, maíz tierno, tocinitos y doble queso",
-//     precio: [7500, 9800, 13000]
-// }]
+let carta = [{
+    nombre: "Americana",
+    descripcion: "Jamon ahumado, salami y doblequeso",
+    precio: [8000, 10000, 12000]
+},
+{
+    nombre: "Americana Especial",
+    descripcion: "Salami, champiñón, cábano y doble queso",
+    precio: [8600, 10600, 12600]
+},
+{
+    nombre: "Hawaiana",
+    descripcion: "Jamón ahumado, piña y doble queso",
+    precio: [7000, 9000, 11000]
+},
+{
+    nombre: "Italiana",
+    descripcion: "Jamón ahumado, tomate fresco, cebolla, doble queso",
+    precio: [10000, 12000, 14000]
+}, {
+    nombre: "Montañera",
+    descripcion: "Cebolla, maíz tierno, tocinitos y doble queso",
+    precio: [7500, 9800, 13000]
+}]
 
 document.getElementById("btnConfirmarCompra").style.display = "none";
 $("#btnOrdenarArmada").attr("style", "display:none");
